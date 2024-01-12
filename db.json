@@ -1,0 +1,14 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "correr 5km",
+      "status": "Concluído"
+    },
+    {
+      "id": 2,
+      "title": "Estudar Matemática",
+      "status": "Em aberto"
+    }
+  ]
+}

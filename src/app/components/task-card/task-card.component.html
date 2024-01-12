@@ -1,0 +1,16 @@
+<!-- app/task-card/task-card.component.html -->
+
+<div class="card">
+    <mat-menu class="card-header" color="primary">
+    </mat-menu>
+    <div class="card-body">
+        <h1> {{ task.title }}</h1>
+        <p>Status: {{ task.status }}</p>
+
+        <div class="buttons">
+            <button (click)="deleteTask()">Deletar</button>
+            <button mat-raised-button (click)="onEditClick()" style="height: 17px;">Editar</button>
+        </div>
+
+    </div>
+</div>

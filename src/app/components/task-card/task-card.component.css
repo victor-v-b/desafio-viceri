@@ -1,0 +1,26 @@
+.card {
+    /* Common styles for both completed and incomplete tasks */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+.task-open {
+  background-color: rgb(130, 118, 118);
+  /* Replace with your desired color */
+}
+
+.task-completed {
+  background-color: rgb(127, 216, 127);
+  /* Replace with your desired color */
+}
+
+.task-in-progress {
+  background-color: rgb(226, 226, 162);
+  /* Replace with your desired color */
+}
+
+  .buttons {
+    display: table-cell;
+    max-width: 600px;
+  }

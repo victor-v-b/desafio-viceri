@@ -1,0 +1,16 @@
+<div class="search-bar">
+    <input [(ngModel)]="searchTerm" placeholder="Pesquisar por nome" class="input-field" />
+    <button (click)="searchTasks()" class="search-button">Search</button>
+  </div>
+  
+  <div class="add-task-button container">
+    <input [(ngModel)]="newTask.title" placeholder="Adicione uma Tarefa" class="input-field" />
+    <button (click)="addTask()" class="add-button">Adicionar Tarefa</button>
+  </div>
+  
+  <div class="task-list container">
+    <div class="task-card" *ngFor="let task of filteredTasks">
+      <app-task-card [task]="task" [taskId]="task.id" [ngClass]="getTaskStatusClass(task.status)"></app-task-card>
+    </div>
+  </div>
+  

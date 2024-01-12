@@ -1,0 +1,16 @@
+<h1>Editar Tarefa</h1>
+<mat-form-field>
+  <input matInput [(ngModel)]="data.task.title" placeholder="Title">
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Status</mat-label>
+  <mat-select [(value)]="data.task.status">
+    <mat-option value="Em aberto">Em aberto</mat-option>
+    <mat-option value="Em progresso">Em progresso</mat-option>
+    <mat-option value="Concluído">Concluído</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<button mat-button (click)="dialogRef.close()">Cancelar</button>
+<button mat-button color="primary" (click)="saveChanges()">Salvar Mudanças</button>
